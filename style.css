@@ -82,10 +82,9 @@ html, body {
 
 .botao{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 05px;
+    padding-left: 20px;
     padding-bottom: 20px;
+    text-align: left;
     
 }
 
@@ -123,8 +122,8 @@ html, body {
 /*Ajustar o conteúdo para smartphones*/
 @media only screen and (max-width:550px){
     .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 330px;
+        grid-template-rows: 300px 300px 300px;
         grid-template-areas:
         "hd"
         "sd"
@@ -132,22 +131,17 @@ html, body {
         
     }
     .box1 {
-        display: block;
-        text-align: justify-all;
         margin-top: 20px;
         margin-right: 20px;
         margin-left: 20px;
     }
     .box2 {
-        display: block;
-        text-align: justify-all;
         margin-right: 20px;
         margin-left: 20px;
     }
     .box3 {
-        display: block;
-        text-align: justify-all;
         margin-right: 20px;
         margin-left: 20px;
+        margin-bottom: 20px;
     }
 }
