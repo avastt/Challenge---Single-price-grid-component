@@ -5,25 +5,13 @@ html, body {
     background: hsl(204, 43%, 93%);
     font-size: 16px;
     font-family: 'Karla', sans-serif;
-}
-
-@media screen and (min-width: 768px) {
-
-    nav {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    nav ul {
-        flex-direction:  row;
-        width: 70%;
-    }
-}
+} 
 
 .box1 {
     grid-area: hd;
     background: white;
     justify-content: center;
+    align-items: center;
 
     
 }
@@ -42,11 +30,11 @@ html, body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(10, 58px);
-    grid-auto-rows: minmax(180px, auto);
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 230px 230px;
     grid-template-areas:
-      "hd hd hd hd hd hd hd hd hd hd"
-      "sd sd sd sd sd  main main main main main";
+      "hd hd"
+      "sd main";
     height: 100vh;
     justify-content: center;
     align-content: center;
@@ -132,4 +120,34 @@ html, body {
     font-size: small;
 }
 
-
+/*Ajustar o conteúdo para smartphones*/
+@media only screen and (max-width:550px){
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "hd"
+        "sd"
+        "main";
+        
+    }
+    .box1 {
+        display: block;
+        text-align: justify-all;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .box2 {
+        display: block;
+        text-align: justify-all;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .box3 {
+        display: block;
+        text-align: justify-all;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
