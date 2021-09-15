@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction:  row;
+        width: 70%;
+    }
+}
+
+.box1 {
+    grid-area: hd;
+    background: white;
+    justify-content: center;
+
+    
+}
+.box2 {
+    grid-area: sd;
+    background: hsl(179, 61%, 43%);
+    justify-content: center;
+
+}
+.box3 {
+    grid-area: main;
+    background: hsl(179, 47%, 51%);
+    justify-content: center;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 58px);
+    grid-auto-rows: minmax(180px, auto);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd hd hd"
+      "sd sd sd sd sd  main main main main main";
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.titulobox1{
+    color: hsl(179, 61%, 43%);
+    padding-left: 20px;
+}
+
+.subtitulobox1 {
+    color: hsl(71, 73%, 54%);
+    padding-left: 20px;
+}
+.corpotextobox1 {
+    color: lightgrey;
+    padding-left: 20px;
+    font-weight: 300;
+}
+
+.titulobox2{
+    color: white;
+    padding-top: 08px;
+    padding-left: 20px;
+}
+
+.corpotextobox2{
+    color: white;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 1.80em;
+}
+
+#formatacaoTexto{
+    color: lightgrey;
+    font-weight: normal;
+    font-size: small;
+}
+
+#frasechamativa {
+    color: white;
+    font-weight: normal;
+    font-size: small;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 05px;
+    padding-bottom: 20px;
+    
+}
+
+.btn{
+    width:230px;
+    height: 35px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 50px;
+    border: none;
+    
+}
+
+.btn:hover {
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 15px 20px rgba(22, 235, 111, 0.4);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+.titulobox3{
+    color: white;
+    padding-top: 08px;
+    padding-left: 20px;
+}
+
+.corpotextobox3{
+    color: lightgrey;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: small;
+}
+
+
